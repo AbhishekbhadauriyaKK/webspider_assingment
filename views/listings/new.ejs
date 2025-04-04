@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <form method="post" action="/listings" >
+        <input name="listing[title]" placeholder="enter title" required>
+    </br>
+        <input name="listing[description]" placeholder="enter description" required>
+        <div >
+            <label class="input-group-text" for="inputGroupSelect01" required>status  &nbsp;&nbsp; </label>
+        
+            <select class="form-select" name="listing[status]">
+              <option selected>status</option>
+              <option >TODO</option>
+              <option >IN_PROGRESS</option>
+              <option >COMPLETED</option>
+            </select>
+          </div>
+          <div >
+            <label class="input-group-text" for="inputGroupSelect01">priority &nbsp;&nbsp;</label>
+        
+            <select class="form-select" name="listing[priority]">
+              <option selected>status</option>
+              <option >LOW</option>
+              <option >MEDIUM</option>
+              <option >HIGH</option>
+            </select>
+          </div>
+        <!-- </br>
+        <input name="listing[status]" placeholder="enter status"> 
+    </br> <input name="listing[priority]" placeholder="enter priority">
+</br><input name="listing[Duedate]" placeholder="enter duedate"> -->
+        <!-- <input name="listing[createdAt]">
+        <input name="listing[updatedAt]"> -->
+        <button>send</button>
+    </form>
+   
+</body>
+</html>
